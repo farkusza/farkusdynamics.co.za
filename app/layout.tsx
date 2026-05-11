@@ -3,11 +3,26 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'FarkusDynamics — AI-Augmented Operations for Modern Businesses',
-  description: 'FarkusDynamics builds intelligent automation, analytics, and AI-powered tools that help businesses operate smarter, faster, and more efficiently.',
-  keywords: ['AI', 'automation', 'analytics', 'business intelligence', 'machine learning', 'South Africa'],
+  description:
+    'FarkusDynamics builds intelligent automation, analytics, and AI-powered tools that help businesses operate smarter, faster, and more efficiently — from Cape Town, South Africa.',
+  keywords: [
+    'AI',
+    'automation',
+    'analytics',
+    'business intelligence',
+    'machine learning',
+    'South Africa',
+    'FarkusDynamics',
+    'Cape Town',
+  ],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
   openGraph: {
     title: 'FarkusDynamics — AI-Augmented Operations',
-    description: 'Intelligent automation, analytics, and AI-powered tools for modern businesses.',
+    description:
+      'Intelligent automation, analytics, and AI-powered tools for modern businesses.',
     type: 'website',
     locale: 'en_ZA',
     siteName: 'FarkusDynamics',
@@ -15,7 +30,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'FarkusDynamics — AI-Augmented Operations',
-    description: 'Intelligent automation, analytics, and AI-powered tools for modern businesses.',
+    description:
+      'Intelligent automation, analytics, and AI-powered tools for modern businesses.',
   },
   robots: {
     index: true,
@@ -32,12 +48,19 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+        {/* Color theme meta tag for browsers */}
+        <meta name="theme-color" content="#0a0e1a" />
       </head>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
